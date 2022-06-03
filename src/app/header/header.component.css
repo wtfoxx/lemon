@@ -2,6 +2,7 @@
  .mat-toolbar {
     position: fixed;
     background-color: #000C18;
+    z-index: 1;
  }
  
  .menu-spacer {

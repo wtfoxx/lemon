@@ -1,0 +1,67 @@
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  margin-top: -300px;
+  padding-top: 300px;
+
+}
+
+.contact-section {
+  width: 1080px;
+  position: relative;
+  display: flex;
+  flex-direction: column  ;
+  align-items: center;
+}
+
+.contact-bar {
+  background-color: #D0D0D0;
+  height: 50px;
+  margin-bottom: 34px;
+  width: 200px;
+
+}
+
+.contact-title {
+  font-family: 'Consolas';
+  font-size: 24px;
+  color: #000C18;
+  margin: 10px;
+  text-align: center;
+}
+
+.contact-text {
+  text-align: center;
+  width: 500px;
+  margin-bottom: 40px;
+  font-family: 'Consolas';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #8B9095;
+}
+
+.contact-buttons {
+  font-family: 'Consolas'; 
+  font-size: 15; 
+  border: 1px solid #FFEE58;
+  border-radius: 4px;
+  
+}
+
+.contact-buttons-section {
+  margin-bottom: 250px;
+}
+
+@media screen and (max-width: 650px) {
+  .paddings {
+    width: 100px !important;
+  }
+
+  .contact-text {
+    width: 100%;
+  }
+}

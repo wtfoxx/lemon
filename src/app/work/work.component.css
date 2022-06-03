@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  margin-top: 200px;
+  margin-top: -200px;
+  padding-top: 200px;
 }
 
 
@@ -26,15 +27,17 @@
 
 .project {
   margin-top: 60px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 900px;
+  min-width: 900px;
+  align-items: center;
 }
 
 .project-text-group {
-  margin: 0px 60px 0px 0px;
-  width: 40%;
+  margin: 0px 16px 0px 0px;
+  width: 50%;
 }
 
 .project-title {
@@ -52,11 +55,11 @@
   font-size: 14px;
   color: #8B9095;
   line-height: 150%;
-  margin-top: 32px;
+  margin-top: 24px;
 }
 
 .project-image {
-  width: 60%;
+  width: 50%;
 }
 
 .labels {
@@ -64,9 +67,63 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 32px;
   color: #000C18;
+  margin-top: 8px;
+  margin-bottom: 0;
+
+}
+
+.image-button {
+  margin: 0;
+  padding: 0;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+
+.project-image-mobile {
+  display: none;
+}
+
+.project-text-group-right {
+  margin: 0px 0px 0px 16px;
+  width: 50%;
+}
+
+.project-text-right {
+  font-size: 14px;
+  color: #8B9095;
+  line-height: 150%;
   margin-top: 24px;
+  text-align: right;
+}
+
+.project-title-right {
+  font-family: 'Consolas';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #D0D0D0;
+  margin: 0;
+  text-align: right;
+}
+
+.labels-right {
+  font-family: 'Consolas';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  color: #000C18;
+  margin-top: 8px;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.links-right {
+  display: flex; 
+  flex-direction: row-reverse; 
+  align-items: center; 
 }
 
 @media screen and (max-width: 1280px) {
@@ -86,14 +143,51 @@
     width: 100%;
   }
 
+  .project-text-group-right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .project-text-right {
+    text-align: left;
+  }
+
 
   .project {
-    width: 100%;
+    min-width: 100%;
     flex-direction: column;
   }
 
   .project-image {
-    width: 100%;
+    display: none;
+  }
+
+  .project-image-mobile {
+    display: contents;
+  }
+
+  .project-title {
+    margin-bottom: 15px;
+  }
+
+  .project-title-right{
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  .labels-right {
+    margin-top: 15px;
+    text-align: left;
+  }
+
+  .labels {
+    margin-top: 15px;
+  }
+
+  .links-right {
+
+    flex-direction: row; 
+
   }
 
 }
@@ -105,5 +199,11 @@
 }
 
 @media screen and (max-width: 480px) {
+  .project-text-left {
+    font-size: 12px;
+  }
 
+  .labels {
+    font-size: 12px;
+  }
 }
