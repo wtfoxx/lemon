@@ -1,0 +1,43 @@
+<mat-toolbar class="navbar" id="start">
+  <button mat-button style="background-color: transparent;" (click)="navigateToSection('start')">
+    <img class="home-icon" src="../favicon.ico" style="width: 32px; height: 32px">
+  </button>
+
+  <span class="menu-spacer"></span>
+
+    <button mat-button disableRipple class="menu-button-desk" (click)="navigateToSection('about')">ABOUT</button>
+    <button mat-button disableRipple class="menu-button-desk" (click)="navigateToSection('work')">WORK</button>
+    <button mat-button disableRipple class="menu-button-desk" style="margin-right: 16px;" (click)="navigateToSection('contact')">CONTACT</button>
+    <button mat-stroked-button class="resume-desk"
+      color="primary" 
+      style="
+        font-family: consolas; 
+        font-size: 15; 
+        border: 1px solid #FFEE58;
+        border-radius: 4px;
+      ">
+      RESUMÉ
+    </button>
+
+    <div class="menu-mob">
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon color="primary">more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" xPosition="before" >
+      <button mat-menu-item>
+        <span>ABOUT</span>
+      </button>
+      <button mat-menu-item>
+        <span>WORK</span>
+      </button>
+      <button mat-menu-item>
+        <span>CONTACT</span>
+      </button>
+      <button mat-menu-item>
+        <span>RESUMÉ</span>
+      </button>
+    </mat-menu>
+    </div>
+
+
+</mat-toolbar>

@@ -1,0 +1,57 @@
+.opening {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.hello-world {
+  color: #000C18;
+  font-size: 52px;
+  padding-top: 300px;
+}
+
+.main-text {
+  font-family: 'Consolas';
+  font-style: normal;
+
+  font-size: 18px;  
+  color: #8B9095;
+}
+
+@media screen and (max-width: 1024px) {
+  
+  }
+  
+  @media screen and (max-width: 950px) {
+    .paddings {
+      width: 100px !important;
+    }
+
+    .hello-world{
+      font-size: 46px;
+      padding-top: 150px;
+    }
+
+    .main-text {
+      font-size: 16px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 650px) {
+    .hello-world{
+      font-size: 36px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 480px) {
+    .hello-world{
+      font-size: 21px;
+    }
+
+    .main-text {
+      font-size: 12px;
+    }
+  }

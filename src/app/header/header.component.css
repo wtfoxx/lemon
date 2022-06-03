@@ -1,0 +1,57 @@
+
+ .mat-toolbar {
+    position: fixed;
+    background-color: #000C18;
+ }
+ 
+ .menu-spacer {
+  flex: 1 1 auto;
+}
+
+.menu-button-desk {
+  color: #8B9095;
+}
+
+
+.menu-button-desk:active, .menu-button-desk:hover {
+  text-decoration: underline;
+  color: #F5F5F5;
+}
+
+.menu-mob {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .menu-mob {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .menu-mob {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .menu-button-desk {
+    display: none;
+  }
+
+  .resume-desk {
+    display: none;
+  }
+
+  .menu-mob {
+    display: contents;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+
+
