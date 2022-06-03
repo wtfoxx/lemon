@@ -1,0 +1,109 @@
+.work {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 200px;
+}
+
+
+.work-bar {
+  background-color: #D0D0D0;
+
+  height: 40px;
+}
+
+.work-section-title {
+  font-size: 21px;
+  color: #000C18;
+  margin: auto;
+  padding: 8px 0px 8px 20px;
+}
+
+.work-section {
+  width: 1080px;
+  position: relative;
+}
+
+.project {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 900px;
+}
+
+.project-text-group {
+  margin: 0px 60px 0px 0px;
+  width: 40%;
+}
+
+.project-title {
+  font-family: 'Consolas';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #D0D0D0;
+  margin: 0;
+}
+
+.project-text-left {
+
+  font-size: 14px;
+  color: #8B9095;
+  line-height: 150%;
+  margin-top: 32px;
+}
+
+.project-image {
+  width: 60%;
+}
+
+.labels {
+  font-family: 'Consolas';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000C18;
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 1280px) {
+  
+}
+
+@media screen and (max-width: 1024px) {
+  .paddings {
+    width: 100px !important;
+  }
+
+
+}
+
+@media screen and (max-width: 950px) {  
+  .project-text-group {
+    width: 100%;
+  }
+
+
+  .project {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .project-image {
+    width: 100%;
+  }
+
+}
+
+
+
+@media screen and (max-width: 650px) {
+  
+}
+
+@media screen and (max-width: 480px) {
+
+}

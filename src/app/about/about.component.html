@@ -7,20 +7,21 @@
         > about me
       </h1>
     </div>
-    <div style="display: flex; flex-direction: row; align-items: flex-start;">
-      <p class="about-section-text">
-        > Hi, I'm Leticia. I'm a developer with a background in product and digital design. My past roles taught me to identify and find creative solutions to pain points while working with multidisciplinary squads under agile methodology. 
-        <br/>  
-        <br/> 
-        > I'm transitioning to development because I found a strong affinity for problem-solving code and developing products beyond the looks. Having learned to code in just a few months, I'm strongly driven by challenges and curiosity and I'm very dedicated and passionate about the things I put my mind to. My goal is to turn this new passion into a full-time career.
-        <br/>
-        <br/> 
-        > Currently living in the greater Vancouver area
-      </p>
-      
-    
-    
-    <img class="pic" src="assets/profilepic.png">
+    <div class="text-img">
+      <div  class="about-section-text">
+        <p>         
+          > Hi, I'm Leticia. I'm a developer with a background in product and digital design. My past roles taught me to identify and find creative solutions to pain points while working with multidisciplinary squads under agile methodology. 
+          <br/>  
+          <br/> 
+          > I'm transitioning to development because I found a strong affinity for problem-solving code and developing products beyond the looks. Having learned to code in just a few months, I'm strongly driven by challenges and curiosity and I'm very dedicated and passionate about the things I put my mind to. My goal is to turn this new passion into a full-time career.
+          <br/>
+          <br/> 
+          > Currently living in the greater Vancouver area
+        </p>
+      </div>
+      <div class="pic">
+        <img class="picture" src="assets/profilepic.png">
+      </div>   
     </div>
 
     <div class="skills-bar">
@@ -29,14 +30,48 @@
       </h1>
     </div>
 
-    <div class="skills-icons" style="display: flex; flex-direction: row; align-items: flex-start;">
-      <mat-grid-list>
-        <mat-grid-tile cols="1">
-          <img src="assets/html.png">
+    
+      <mat-grid-list [cols]="col$ | async" rowHeight="36px" gutterSize="30px" class="grid">
+        <mat-grid-tile matTooltip="HTML" matTooltipPosition="above">
+          <img class="icon" src="assets/html.png"> 
+        </mat-grid-tile>
+ 
+        <mat-grid-tile matTooltip="CSS" matTooltipPosition="above">
+          <img class="icon" src="assets/css.png">
+        </mat-grid-tile>
+
+        <mat-grid-tile matTooltip="JavaScript" matTooltipPosition="above">
+          <img class="icon" src="assets/js.png">
+        </mat-grid-tile>
+
+        <mat-grid-tile matTooltip="Node.js" matTooltipPosition="above">
+          <img class="icon" src="assets/node.png">
+        </mat-grid-tile>
+
+        <mat-grid-tile matTooltip="Angular" matTooltipPosition="above">
+          <img class="icon" src="assets/angular.png">
+        </mat-grid-tile>
+
+        <mat-grid-tile matTooltip="React" matTooltipPosition="above">
+          <img class="icon" src="assets/react.png">
+        </mat-grid-tile>
+
+        <mat-grid-tile matTooltip="Material" matTooltipPosition="above">
+          <img class="icon" src="assets/mui.png">
+        </mat-grid-tile>
+
+        <mat-grid-tile matTooltip="Bootstrap" matTooltipPosition="above">
+          <img class="icon" src="assets/boot.png">
         </mat-grid-tile>
 
       </mat-grid-list>
-    </div>
+
+      <p class="about-section-text">
+        > and more... 
+        <br/>  
+        <br/> 
+        > █
+      </p>
 
   </div>
 

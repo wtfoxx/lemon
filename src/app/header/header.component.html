@@ -1,5 +1,5 @@
-<mat-toolbar class="navbar" id="start">
-  <button mat-button style="background-color: transparent;" (click)="navigateToSection('start')">
+<mat-toolbar class="navbar">
+  <button mat-button style="background-color: transparent;" (click)="navigateToSection('main')">
     <img class="home-icon" src="../favicon.ico" style="width: 32px; height: 32px">
   </button>
 
@@ -39,5 +39,20 @@
     </mat-menu>
     </div>
 
-
+    
 </mat-toolbar>
+
+<mat-icon 
+    style="
+      display: flex;
+      color: #D9D9D9; 
+      transform: scale(2);
+      justify-self: center;
+      position: fixed;
+      z-index: 1; 
+      left: 50%;
+      top: 90%;
+    " 
+    fontSize="large">
+    expand_more
+  </mat-icon>

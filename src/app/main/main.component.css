@@ -7,7 +7,7 @@
 
 .hello-world {
   color: #000C18;
-  font-size: 52px;
+  font-size: 50px;
   padding-top: 300px;
 }
 
@@ -17,6 +17,11 @@
 
   font-size: 18px;  
   color: #8B9095;
+}
+
+.mark-hello {
+  background-color: #D0D0D0; 
+  padding: 10px 50px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -30,7 +35,6 @@
 
     .hello-world{
       font-size: 46px;
-      padding-top: 150px;
     }
 
     .main-text {
@@ -48,10 +52,20 @@
   
   @media screen and (max-width: 480px) {
     .hello-world{
-      font-size: 21px;
+      font-size: 24px;
     }
 
     .main-text {
-      font-size: 12px;
+      font-size: 14px;
     }
+
+    .mark-hello {
+      padding: 10px;
+    }
+  }
+
+  @media screen and (max-height: 800px) {
+    .hello-world {
+      padding-top: 200px;
+    }  
   }

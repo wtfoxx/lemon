@@ -15,6 +15,8 @@ import { WorkComponent } from './work/work.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatMenuModule,
     MatIconModule,
     MatGridListModule,
+    LayoutModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
