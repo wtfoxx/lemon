@@ -79,7 +79,13 @@ export class HeaderComponent implements AfterViewInit {
   }
 
   public navigateToSection(section: string) {
-    window.location.hash = '';
-    window.location.hash = section;
+    this.toHome();
+    setTimeout(() => {
+      window.location.hash = section;
+    }, 100);
+  }
+
+  toHome(): void {
+    this.router.navigate(['home']);
   }
 }

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,7 +17,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { CaseStudyComponent } from './case-study/case-study.component';
+
+const appRoutes: Routes = [
+  { path: 'case', component: CaseStudyComponent },
+  { path: 'home', component: MainComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'prefix' },
+];
 
 @NgModule({
   declarations: [
@@ -27,6 +34,7 @@ import { RouterModule } from '@angular/router';
     HeaderComponent,
     MainComponent,
     ContactComponent,
+    CaseStudyComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +48,7 @@ import { RouterModule } from '@angular/router';
     MatGridListModule,
     LayoutModule,
     MatTooltipModule,
-    RouterModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent],
