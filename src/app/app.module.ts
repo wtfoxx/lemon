@@ -23,7 +23,7 @@ import { CaseStudyComponent } from './case-study/case-study.component';
 const appRoutes: Routes = [
   { path: 'case', component: CaseStudyComponent },
   { path: 'home', component: MainComponent },
-  { path: '', redirectTo: 'home', pathMatch: 'prefix' },
+  { path: '', component: MainComponent },
 ];
 
 @NgModule({

@@ -7,9 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lemon';
-
-  public navigateToSection(section: string) {
-    window.location.hash = '';
-    window.location.hash = section;
-  }
 }
